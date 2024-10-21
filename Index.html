@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #27ae60;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .cart-icon {
+            position: absolute;
+            top: 30px;
+            right: 80px;
+            width: 70px;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+
+        .service-box h3 {
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .service-box a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Agricultura</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="soil-testing.html">Soil Testing</a></li>
+                <li><a href="seedling.html">Seedling</a></li>
+                <li><a href="fertilizers.html">Fertilizers</a></li>
+                <li><a href="pesticides.html">Pesticides</a></li>
+                <li><a href="equipments.html">Equipments</a></li>
+            </ul>
+        </nav>
+
+        <!-- Cart Icon -->
+        <a href="cart.html">
+            <img src="cart-icon.png" alt="Cart" class="cart-icon">
+        </a>
+    </header>
+
+    <main>
+        <h2>Welcome to Agricultura!</h2>
+        <p>Your one-stop shop for all your agricultural needs.</p>
+
+        <!-- Services Section -->
+        <div class="services">
+            <div class="service-box">
+                <h3>Soil Testing</h3>
+                <a href="soil-testing.html">Learn More</a>
+            </div>
+
+            <div class="service-box">
+                <h3>Seedling</h3>
+                <a href="seedling.html">Explore Now</a>
+            </div>
+
+            <div class="service-box">
+                <h3>Fertilizers</h3>
+                <a href="fertilizers.html">Shop Now</a>
+            </div>
+
+            <div class="service-box">
+                <h3>Pesticides</h3>
+                <a href="pesticides.html">See Details</a>
+            </div>
+
+            <div class="service-box">
+                <h3>Equipments</h3>
+                <a href="equipments.html">Browse Products</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
